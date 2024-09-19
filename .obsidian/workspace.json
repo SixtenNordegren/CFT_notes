@@ -1,0 +1,167 @@
+{
+  "main": {
+    "id": "6e974952b0529259",
+    "type": "split",
+    "children": [
+      {
+        "id": "094d351a72ce6bed",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e331c076de11c895",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Welcome.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "5058b36d6226bc75",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4ed08eb84274c83a",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7a2165aa8f80cd71",
+    "type": "split",
+    "children": [
+      {
+        "id": "0c915ec7e996bf79",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "39e4aaff377aed03",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "40753b7d3bd85973",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "bffd1d62038d5fc2",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "95b2fc7d310ae3ae",
+    "type": "split",
+    "children": [
+      {
+        "id": "e461f88ce9543a11",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0f6d1ab29d426b27",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Welcome.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f50c5e6b27caac52",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Welcome.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9f1a1e7df5e8b35a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "6e3c88483453e476",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Welcome.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "e331c076de11c895",
+  "lastOpenFiles": [
+    "Welcome.md"
+  ]
+}
