@@ -4,24 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "094d351a72ce6bed",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "e331c076de11c895",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Welcome.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "5058b36d6226bc75",
         "type": "tabs",
         "children": [
@@ -29,8 +11,12 @@
             "id": "4ed08eb84274c83a",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Symmetries and Conservation Laws.md",
+                "mode": "preview",
+                "source": false
+              }
             }
           }
         ]
@@ -99,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Welcome.md",
+                "file": "Symmetries and Conservation Laws.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Welcome.md",
+                "file": "Symmetries and Conservation Laws.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Welcome.md"
+                "file": "Symmetries and Conservation Laws.md"
               }
             }
           }
@@ -160,8 +146,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e331c076de11c895",
+  "active": "4ed08eb84274c83a",
   "lastOpenFiles": [
+    "from_remarkable/Notes on symmetries and conservation laws.pdf",
+    "from_remarkable/Notes for 2D cft paper.pdf",
+    "from_remarkable",
+    "Symmetries and Conservation Laws.md~",
+    "README.md~",
+    "README.md",
+    "MEETING_1.md",
+    "DICTIONARY.md",
+    "Symmetries and Conservation Laws.md",
+    "DICTIONARY.md~",
     "Welcome.md"
   ]
 }
