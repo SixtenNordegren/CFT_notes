@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4ed08eb84274c83a",
+            "id": "a128c2dcb2e67781",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Symmetries and Conservation Laws.md",
+                "file": "Symmetries and conservation laws/Active Transformation.md",
                 "mode": "preview",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Symmetries and Conservation Laws.md",
+                "file": "Symmetries and conservation laws/Active Transformation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Symmetries and Conservation Laws.md",
+                "file": "Symmetries and conservation laws/Active Transformation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Symmetries and Conservation Laws.md"
+                "file": "Symmetries and conservation laws/Active Transformation.md"
               }
             }
           }
@@ -146,18 +146,28 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4ed08eb84274c83a",
+  "active": "a128c2dcb2e67781",
   "lastOpenFiles": [
-    "from_remarkable/Notes on symmetries and conservation laws.pdf",
-    "from_remarkable/Notes for 2D cft paper.pdf",
-    "from_remarkable",
+    "Symmetries and conservation laws/Active Transformation.md~",
+    "Symmetries and conservation laws/Passive Transformations.md",
+    "Symmetries and conservation laws/Active Transformation.md",
+    "Math/Functional analysis.md",
+    "Math",
+    "Functional analysis.md",
+    "from_remarkable/Notes on symmetries and conservation laws (1).pdf",
+    "passive-transformations.md",
+    "Symmetries and conservation laws/4913",
+    "Symmetries and conservation laws/Symmetries and Conservation Laws.md",
     "Symmetries and Conservation Laws.md~",
-    "README.md~",
-    "README.md",
-    "MEETING_1.md",
-    "DICTIONARY.md",
+    "Symmetries and conservation laws",
     "Symmetries and Conservation Laws.md",
-    "DICTIONARY.md~",
+    "from_remarkable/Notes for 2D cft paper.pdf",
+    "4913",
+    "README.md",
+    "DICTIONARY.md",
+    "from_remarkable/Notes on symmetries and conservation laws.pdf",
+    "from_remarkable",
+    "MEETING_1.md",
     "Welcome.md"
   ]
 }
