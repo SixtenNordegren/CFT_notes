@@ -58,7 +58,7 @@ $$
 $$
 Using this expression in combination with equation $\eqref{2}$, we get 
 $$
-\delta S = - \frac12\int d^dxT^{\mu\nu}\delta g_{\mu\nu}.\tag{3}\label{3}
+\delta S = - \frac12\int d^dxT^{\mu\nu}\delta g_{\mu\nu}.\tag{3}
 $$
 ## Proof 
 A conformal transformation is an invertible map, leaving the metric tensor invariant up to a scale

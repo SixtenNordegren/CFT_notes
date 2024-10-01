@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
-                "mode": "preview",
+                "file": "Vanishing trace.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Vanishing trace.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Vanishing trace.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Vanishing trace.md"
               }
             }
           }
@@ -148,18 +148,19 @@
   },
   "active": "a128c2dcb2e67781",
   "lastOpenFiles": [
+    "Functional analysis.md",
+    "DICTIONARY.md",
+    "from_remarkable/Notes on symmetries and conservation laws (1).pdf",
+    "from_remarkable/Notes for 2D cft paper.pdf",
+    "Math/Functional analysis.md",
+    "Symmetries and conservation laws/Active Transformation.md",
+    "Symmetries and conservation laws/Passive Transformations.md",
+    "README.md",
     "README.md~",
     "Vanishing trace.md",
     "Vanishing trace.md~",
-    "Symmetries and conservation laws/Active Transformation.md",
-    "Symmetries and conservation laws/Passive Transformations.md",
     "4913",
-    "Functional analysis.md",
-    "from_remarkable/Notes for 2D cft paper.pdf",
-    "from_remarkable/Notes on symmetries and conservation laws (1).pdf",
     "active-transformation.md",
-    "Math/Functional analysis.md",
-    "README.md",
     "Symmetries and conservation laws/Active Transformation.md~",
     "Math",
     "passive-transformations.md",
@@ -168,7 +169,6 @@
     "Symmetries and Conservation Laws.md~",
     "Symmetries and conservation laws",
     "Symmetries and Conservation Laws.md",
-    "DICTIONARY.md",
     "MEETING_1.md",
     "Welcome.md"
   ]
