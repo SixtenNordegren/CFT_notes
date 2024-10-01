@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vanishing trace.md",
+                "file": "README.md",
                 "mode": "preview",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Vanishing trace.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Vanishing trace.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Vanishing trace.md"
+                "file": "README.md"
               }
             }
           }
@@ -148,9 +148,10 @@
   },
   "active": "a128c2dcb2e67781",
   "lastOpenFiles": [
+    "README.md~",
+    "Vanishing trace.md",
     "Vanishing trace.md~",
     "Symmetries and conservation laws/Active Transformation.md",
-    "Vanishing trace.md",
     "Symmetries and conservation laws/Passive Transformations.md",
     "4913",
     "Functional analysis.md",
@@ -168,7 +169,6 @@
     "Symmetries and conservation laws",
     "Symmetries and Conservation Laws.md",
     "DICTIONARY.md",
-    "from_remarkable/Notes on symmetries and conservation laws.pdf",
     "MEETING_1.md",
     "Welcome.md"
   ]
