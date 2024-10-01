@@ -1,7 +1,7 @@
-In this note we investigate the effects of a general Quantum Field Theory (QFT) action functional $S[\phi, \partial_\mu\phi]$.
+In this note we investigate the active transformation, and its effects on a general action functional $S[\phi, \partial_\mu\phi]$. We start by giving a definition of the concepts and proceed to work out a few examples. Further more we investigate the infinitesimal transformation and give a short proof of Nöters theorem.
 
-A transformation of the action can be thought of from two different perspectives. The first one, the *active* transformation, is the concept of actively changing parameters of the components of the action.
-
+### Introduction
+A transformation of the action $S$ can be thought of from two different perspectives. The first one, the *active* transformation, adds or changes the content of a function i.e., by setting it to a different value then what it first was.
 Transforming the position,
 $$
 x \to x^\prime,
@@ -19,8 +19,6 @@ $$
 An alternative paradigm, the [[passive-transformations]], are discussed in another note.
 
 Consider the transformed action:
-
-
 $$
 \begin{aligned}
 S^\prime &= \int d^dx \mathcal L\left(\phi^\prime(x),\partial_\mu\phi^\prime(x)\right)\\
@@ -30,17 +28,17 @@ S^\prime &= \int d^dx \mathcal L\left(\phi^\prime(x),\partial_\mu\phi^\prime(x)\
 \end{aligned}
 \tag{2}
 $$
-
+This expression gives us a way to formally investigate the transformed action.
 ### Examples
 With the expression for the action we just derived we are able to compute a few simple examples of active transformations on the action. We go on to compute examples for translation, rotation and scale transformation.
 
 
 1. E.x.: Translation
 $$
-\begin{aligned}
-x^\prime = x + a \text{( $a$ is a constant parameter.)}\\
-\phi^\prime (x + a) = \phi (x) 
-\end{aligned}
+\begin{align}
+x^\prime &= x + a \qquad\text{( $a$ is a constant parameter.)}\\
+\phi^\prime (x + a) &= \phi (x) 
+\end{align}
 $$
 
 This example is trivial seeing as 
@@ -99,7 +97,7 @@ $$
 In this section we consider the active transformations caused by a set of infinitesimal parameters $\{\omega_a\}$. The transformations we refer to in this section are 
 $$
 \begin{align}
-x^\mu \to x^{\prime\mu} = x^\mu + \omega_a \frac{\delta x^\mu}{\delta \omega a},\\
+x^\mu \to x^{\prime\mu} = x^\mu + \omega_a \frac{\delta x^\mu}{\delta \omega_a},\\
 \phi^\prime(x^\prime) = \phi(x) + \omega_a \frac{\delta\mathcal F}{\delta \omega_a}.
 \end{align}\tag{3}
 $$
@@ -109,7 +107,7 @@ Where $\delta$ denotes the [[Math/Functional analysis|functional derivative]]. B
 The collective symmetry transformations for a given action gives form to a symmetry group. It is common to define the generators $(G_a)$ for such a group through the functional derivative as follows
 
 $$
-\frac{\phi(x)}{\delta \omega} := \phi^\prime(x) - \phi(x):= -i\omega_a G_a\phi\tag{4}.
+\frac{\delta\phi(x)}{\delta \omega} := \phi^\prime(x) - \phi(x):= -i\omega_a G_a\phi\tag{4}.
 $$
 
 Going back to the infinitesimal transformation, we can perform the following expansion of the field $\phi(x)$ w.r.t. $\omega_a$ around the point $x^\prime$ as follows.
@@ -117,7 +115,7 @@ Going back to the infinitesimal transformation, we can perform the following exp
 $$
 \begin{align}
 \phi(x) &= \phi\left(x^\prime - \omega_a \frac{\delta x}{\delta \omega_a}\right)\\
-&= \phi(x^\prime) + \left[\frac{\delta}{\delta \omega_a}\phi \left(x^\prime - \omega_a\frac{\delta x}{\delta \omega_a}\right)\right] \cdot\omega_a + h.c.\qquad {terms of order } \omega^2 \text{vanish due to } \omega \text{ being infinitesimal}.\\
+&= \phi(x^\prime) + \left[\frac{\delta}{\delta \omega_a}\phi \left(x^\prime - \omega_a\frac{\delta x}{\delta \omega_a}\right)\right] \cdot\omega_a + h.c.\qquad \text{terms of order } \omega^2 \text{vanish.}\\
 &= \phi(x^\prime) + \frac{\partial \phi(x^\prime)}{\partial x^{\prime \mu}}\frac{\delta}{\delta \omega_a}\left(x^\prime - \omega_a \frac{\delta x}{\delta \omega_a}\right) \cdot\omega\\
 &= \phi(x^\prime) - \omega_a \left(\frac{\partial \phi(x^\prime)}{\partial x^\prime}\right)\frac{\delta x}{\delta \omega_a}
 \end{align}
@@ -126,15 +124,15 @@ $$
 Having expanded $\phi(x)$ in combination with the transformed field $\eqref{4}$ allows us deduce the following 
 $$
 \begin{align}
-\phi^\prime (x^\prime) &= \phi(x) + \omega_a \frac{\mathcal F }{\omega_a}(x) \\
-&= \phi(x^\prime) - \omega_a \left(\frac{\partial \phi(x^\prime)}{\partial x^\prime}\right)\frac{\delta x}{\delta \omega_a} +\omega_a \frac{\mathcal F }{\omega_a}(x^\prime)
+\phi^\prime (x^\prime) &= \phi(x) + \omega_a \frac{\delta\mathcal F }{\delta\omega_a}(x) \\
+&= \phi(x^\prime) - \omega_a \left(\frac{\partial \phi(x^\prime)}{\partial x^\prime}\right)\frac{\delta x}{\delta \omega_a} +\omega_a \frac{\delta\mathcal F }{\delta\omega_a}(x^\prime)
 \end{align}
 $$
 In the last component of the above expansion, we have performed a similar expansion of the function $\mathcal F$ around $x^\prime$ to change it's dependence to $x^\prime$. From this we can conclude two things. Firstly, the variation of the fields can w.l.o.g. be written as
 $$
 \begin{align}
 \delta_\omega \phi(x) &= \phi^\prime(x) - \phi(x), \\
-&= - \omega_a \left(\frac{\partial \phi(x)}{\partial x}\right)\frac{\delta x}{\delta \omega_a} +\omega_a \frac{\mathcal F }{\omega_a}(x).
+&= - \omega_a \left(\frac{\partial \phi(x)}{\partial x}\right)\frac{\delta x}{\delta \omega_a} +\omega_a \frac{\delta\mathcal F }{\delta\omega_a}(x).
 \end{align}
 $$
 
@@ -161,7 +159,7 @@ $$
 S^\prime = \int d^dx\left(1 + \partial_\mu \left(\omega_a \frac{\delta x^\mu}{\delta\omega_a}\times \mathcal L \left( \phi + \omega_a \frac{\mathcal F}{\delta\omega_a}, \left[\delta^\nu_\mu - \partial_\mu\left(\omega_a \left(\frac{\delta x^\nu}{\delta \omega^a}\right)\right)\right]\left(\partial_\nu\phi + \partial_\nu\left[\omega_a \left(\frac{\delta \mathcal F}{\delta \omega_a}\right)\right]\right)\right)\right)\right)
 $$
 
-Now expanding expression around $x$ w.r.t. $\omega_a$ we can write the variation of the action, simlarly to how we did for the field. This equation is quite a bit more tedious so we leave it out for now. The result is the following:
+Now expanding expression around $x$ w.r.t. $\omega_a$ we can write the variation of the action, simlarly to how we did for the field. This equation is quite a bit more tedious so we leave out the explicit calculation for now. The result is the following:
 
 $$
 \delta S = \int d^d x \partial_\mu j^\mu_{\,a}\omega_a
