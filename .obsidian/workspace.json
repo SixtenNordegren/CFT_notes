@@ -11,11 +11,9 @@
             "id": "a128c2dcb2e67781",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Vanishing trace.md",
-                "mode": "source",
-                "source": false
+                "file": "from_remarkable/Notes on symmetries and conservation laws (1).pdf"
               }
             }
           }
@@ -69,7 +67,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "95b2fc7d310ae3ae",
@@ -85,7 +84,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Vanishing trace.md",
+                "file": "from_remarkable/Notes on symmetries and conservation laws (1).pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +101,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Vanishing trace.md",
+                "file": "from_remarkable/Notes on symmetries and conservation laws (1).pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +124,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Vanishing trace.md"
+                "file": "from_remarkable/Notes on symmetries and conservation laws (1).pdf"
               }
             }
           }
@@ -148,16 +147,16 @@
   },
   "active": "a128c2dcb2e67781",
   "lastOpenFiles": [
+    "Symmetries and conservation laws/Active Transformation.md",
+    "from_remarkable/Notes for 2D cft paper.pdf",
+    "from_remarkable/Notes on symmetries and conservation laws (1).pdf",
+    "README.md",
+    "Vanishing trace.md",
     "Functional analysis.md",
     "DICTIONARY.md",
-    "from_remarkable/Notes on symmetries and conservation laws (1).pdf",
-    "from_remarkable/Notes for 2D cft paper.pdf",
     "Math/Functional analysis.md",
-    "Symmetries and conservation laws/Active Transformation.md",
     "Symmetries and conservation laws/Passive Transformations.md",
-    "README.md",
     "README.md~",
-    "Vanishing trace.md",
     "Vanishing trace.md~",
     "4913",
     "active-transformation.md",
