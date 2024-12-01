@@ -1,3 +1,9 @@
+---
+id: Active Transformation
+aliases: []
+tags: []
+---
+
 In this note we investigate the active transformation, and its effects on a general action functional $S[\phi, \partial_\mu\phi]$. We start by giving a definition of the concepts and proceed to work out a few examples. Further more we investigate the infinitesimal transformation and give a short proof of Nöters theorem.
 
 ### Introduction
@@ -16,7 +22,7 @@ $$
 S \to S^\prime = S[\phi^\prime(x^\prime), \partial_\mu\phi^\prime(x^\prime)].
 $$
 
-An alternative paradigm, the [[passive-transformations]], are discussed in another note.
+An alternative paradigm, the [[Passive Transformations|passive transformations]], are discussed in another note.
 
 Consider the transformed action:
 $$

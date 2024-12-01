@@ -1,11 +1,63 @@
-In statistical mechanics, the goal is to treat systems that consists of a large number of particles $(N)$. One does this by specifying macroscopic properties of the system as a whole e.g. Temperature $(T)$, Number of particles $(N)$, or Free energy $(F)$ and so on.
+---
+id: Review on statistical mechanics
+aliases: []
+tags: []
+---
 
-Such properties are undeniably determined by the configuration of its constituent parts i.e. a micro state.
+In statistical mechanics, the goal is to treat systems that consist of a number of particles $(N)$. One does this by specifying macroscopic properties of the system as a whole e.g. Temperature $(T)$, Number of particles $(N)$, or Free energy $(F)$ and so on.
 
-The number of micro states are typically exceedingly high, and in order to feasibly predict any macroscopic properties, one replaces the exact state with a statistical distribution that represents the underlying nature of the system. In the context of statistical mechanics these distributions are referred to as ensembles.
+Such properties are undeniably determined by the configuration of its constituent parts i.e. a microstate.
 
-Picking a suitable ensemble for the system at hand is of coerce crucial and we proceed to give a few relevant examples.
+The number of microstates are typically exceedingly high, and in order to feasibly predict any macroscopic properties, one replaces the exact state with a statistical distribution that represents the underlying nature of the system. In the context of statistical mechanics these distributions are referred to as ensembles.
 
+Picking a suitable ensemble for the system at hand is crucial, and we proceed to give a few relevant examples.
+
+<span style="color:red;"> Reminder to write about canonical, micro canonical, and grand canonical ensambles</span>
+
+One of the ubiquitous rules of statistical mechanics is that all microstates have the same probability. The probability of a given microstate, if dependant only of the energy of the system, is given by the Boltzman distribution
+$$
+p_i = \frac 1 Z \exp\left(-\beta E_i\right).
+$$
+In this definition, we have the energy for the given microstate $E_i$, the inverse temperature $\beta = 1/T$ and the partition function $Z$, defined as
+$$
+Z = \sum_i\exp-\beta E_i.
+$$
+A grouping of particles (i.e. an ensemble) is called the canonical ensemble if they are Boltzmann distributed. The partition function is of particular interest since it can alone determine other macroscopic quantities. Specifically, the derivatives of $Z$ can be used to characterize the system as a whole, it is because of this property $Z$ is called the generating function for the system.
+
+An example of this property is demonstrated by considering the average energy. 
+$$
+\begin{align}
+U &= \sum_i E_ip_i,\\
+&= \frac1Z \sum_iE_i \exp\left(-\beta E_i\right).
+\end{align}
+$$
+We can simplify this expression further by computing the derivatives of the partition function 
+$$
+\begin{align}
+\frac{\partial Z}{\partial\beta} &= \frac{\partial}{\partial \beta} \left(\sum\exp\left(-\beta E_i\right)\right),\\
+&=-\sum_i E_i\exp\left(\beta E_i\right),
+\end{align}
+$$
+from where we can conclude that the average energy is 
+$$
+U = -\frac1Z\frac{\partial Z}{\partial \beta}.
+$$
+Furthermore, we can define the free energy 
+$$
+F := -T\ln\left(Z\right).
+$$
+By inverting this relation we can conclude,
+$$
+Z = \exp \left(- F\beta\right).
+$$
+We can use this relation to rewrite the average energy a final time, 
+$$
+\begin{align}
+U &= -\frac1Z\frac{\partial T}{\partial \beta}\frac{\partial Z}{\partial T};\\
+&= -\frac1{T^2}\frac\partial{\partial T}\left(\frac F T\right),
+\end{align}
+$$
+where we have done a change of coordinates matrix in the first equation, and in the last step we just keep what is left of the inner derivative. 
 ### The Ising model
 
 
@@ -59,7 +111,7 @@ This allows us to write the partition function as
 $$
 \begin{split}
 Z &= \int dx\rho(x,x)\\
-  &= \left[dx\right]\exp\left(-\rm S_\rm{E}[x]\right).
+  &= \int\left[dx\right]\exp\left(-\rm S_\rm{E}[x]\right).
 \end{split}
 $$
 
@@ -73,6 +125,6 @@ $$
            &= \frac 1 Z \int\left[dx\right] A_e(x(0))\exp\left(-\rm{S}_{\rm{E}}[x]\right).\\
 \end{split}
 $$
-where $A_e(x)$ denotes an eigen value of $x$.
+where $A_e(x)$ denotes an eigenvalue of $x$.
 
 Our key takeaway from this is that we get the quantum action functional from the ordinary action through Wick rotation.
