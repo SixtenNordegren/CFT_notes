@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Vanishing trace.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "critical",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -73,7 +73,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -164,16 +165,16 @@
   },
   "active": "1673b66227893892",
   "lastOpenFiles": [
+    "Symmetries and conservation laws/Active Transformation.md",
+    "Statistical mechanics/Review on Phase Transitions.md",
+    "README.md",
+    "Statistical mechanics/Review on statistical mechanics.md",
+    "Vanishing trace.md",
     "Statistical mechanics/Review on statistical mechanics.md~",
     "Functional analysis.md",
     "from_remarkable/Notes on symmetries and conservation laws (1).pdf",
     "Math/Functional analysis.md",
-    "Statistical mechanics/Review on Phase Transitions.md",
-    "Statistical mechanics/Review on statistical mechanics.md",
-    "Symmetries and conservation laws/Active Transformation.md",
     "from_remarkable/Notes for 2D cft paper.pdf",
-    "Vanishing trace.md",
-    "README.md",
     "Symmetries and conservation laws/Passive Transformations.md",
     "Statistical mechanics/Review on Phase Transitions.md~",
     "Untitled.canvas",
