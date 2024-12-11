@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vanishing trace.md",
+                "file": "Statistical mechanics/Review on Phase Transitions.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Vanishing trace"
+              "title": "Review on Phase Transitions"
             }
           }
         ]
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "critical",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "95b2fc7d310ae3ae",
@@ -165,18 +166,20 @@
   },
   "active": "1673b66227893892",
   "lastOpenFiles": [
-    "Symmetries and conservation laws/Active Transformation.md",
-    "Statistical mechanics/Review on Phase Transitions.md",
-    "README.md",
+    "Statistical mechanics/calculation.sage~",
+    "Statistical mechanics/Review on Phase Transitions.md~",
+    "Statistical mechanics/calculation.sage",
     "Statistical mechanics/Review on statistical mechanics.md",
+    "Statistical mechanics/Review on Phase Transitions.md",
     "Vanishing trace.md",
+    "Symmetries and conservation laws/Active Transformation.md",
+    "README.md",
     "Statistical mechanics/Review on statistical mechanics.md~",
     "Functional analysis.md",
     "from_remarkable/Notes on symmetries and conservation laws (1).pdf",
     "Math/Functional analysis.md",
     "from_remarkable/Notes for 2D cft paper.pdf",
     "Symmetries and conservation laws/Passive Transformations.md",
-    "Statistical mechanics/Review on Phase Transitions.md~",
     "Untitled.canvas",
     "Symmetries and conservation laws/Active Transformation.md~",
     "Statistical mechanics/Review_on_Phase_Transitions.sage",
@@ -188,7 +191,6 @@
     "Vanishing trace.md~",
     "4913",
     "active-transformation.md",
-    "Math",
     "Symmetries and conservation laws/Symmetries and Conservation Laws.md",
     "Symmetries and Conservation Laws.md",
     "MEETING_1.md",
