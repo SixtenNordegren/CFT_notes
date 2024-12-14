@@ -83,15 +83,16 @@ $$
 f = t^{-\frac1a}g(y).
 $$
 
-The spontaneous magnetization for such a system can then be written as 
+We will go on to investigate the macroscopic properties that are key to critical exponents.
+Starting with spontaneous magnetization, it can be written as,
 $$
 \begin{align}
 M &= -\frac{\partial f}{\partial h}\left |_{h=0}\right.;\\
   &= -\frac{\partial}{\partial h}\left(t^{-\frac1a}g\right)\left |_{h=0}\right.;\\
   &= -t^{-\frac1a}\frac{\partial y}{\partial h}\frac{\partial g}{\partial y}\left |_{h=0}\right.;\\
   &= -t^{-\frac1a}\frac1{t^{b/a}}\frac{\partial g}{\partial y}\left|_{h=0}\right.;\\
-    &= -t^{-\frac{(b-a)}{a}}\frac{\partial }{\partial y}\left.\left(g(0) + g^\prime (0)y + \frac{g^{\prime\prime}(0)y^2}{2}+\dots \right)\right |_{h=0};\\
- &= -t^{-\frac{(b-a)}{a}}g^\prime(0). \text{ I am off by a minus sign. I can't tell where he gets it from.}
+    &= -t^{-\frac{(b+1)}{a}}\frac{\partial }{\partial y}\left.\left(g(0) + g^\prime (0)y + \frac{g^{\prime\prime}(0)y^2}{2}+\dots \right)\right |_{h=0};\\
+ &= -t^{-\frac{(b+1)}{a}}g^\prime(0). \text{ I am off by a minus sign. I can't tell where he gets it from.}
 \end{align}
 $$
 
@@ -107,4 +108,52 @@ $$
 &= -t^{(1-2b)/a}g^{\prime\prime}(0).
 \end{align}
 $$
+
+Lastly, the specific heat can be written as
+$$
+\begin{align}
+C_v &= \left. -T\frac{\partial^2 f}{\partial T^2}\right |_{h=0}\\
+    &= \left. -T\frac{\partial^2}{\partial T^2}t^{-\frac1a}g\right |_{h=0}\\
+&= \left. -T\left(\frac{\partial t}{\partial T}\right)^2\frac{\partial^2  }{\partial t^2}t^{-\frac1a}g\right |_{h=0}\\
+&= \left. -\frac{T}{T_c^2}\frac{\partial}{\partial t}\left(\frac{t^{\frac1a - 1}}{a}g + t^{\frac1a}\frac{\partial }{\partial t}g(y)\right)\right |_{h=0}\\
+&= \left. -\frac{T}{T_c^2}\left[\left(\frac1a -1 \right)\left(\frac1a\right)t^{\frac1a - 2}g + \frac2at^{\frac1a - 1}\frac{\partial }{\partial t}g(y) + t^{\frac1a}\frac{\partial^2 }{\partial t^2}g(y)\right]\right |_{h=0}\\
+\end{align}
+$$
+
+We proceed to compute the Jacobian of the transformation $t\to y$ is given by,
+$$
+\left(\frac{\partial t}{\partial y}\right) = -\frac{b h}{at^{\frac{b}{a}+1}}.
+$$
+This allows us to compute the derivative terms in the specific heat,
+$$
+\begin{align}
+\left.\frac{\partial }{\partial t}g(y)\right |_{h=0} &= \left.-\frac{b h}{at^{\frac{b}{a}+1}}\frac{\partial }{\partial y}g(y)\right |_{h=0}\\
+&= 0.
+\end{align}
+$$
+The second derivative term is given by
+$$
+\begin{align}
+\left.\frac{\partial^2 }{\partial t^2}g(y)\right |_{h=0} &= \left.\frac{\partial}{\partial t}\left(\frac{b h}{at^{\frac{b}{a}+1}}\frac{\partial }{\partial y}g(y)\right)\right |_{h=0}\\
+&= \left. \frac{bh}{a}\left(\left(\frac{b}{a}-1\right) \frac{1}{t^{\frac{b}{a}-2}}\frac{\partial }{\partial y}g(y) - \frac{1}{t^{\frac{b}{a}-1}}\frac{\partial}{\partial y} g(y) \right)\right |_{h=0}\\
+&= 0.
+\end{align}
+$$
+Substituting these results back into the specific heat we find that the only part that survives is the first term, which is given by
+$$
+\begin{align}
+C_v &= \left. -\frac{T}{T_c^2}\left[\left(\frac1a -1 \right)\left(\frac1a\right)t^{\frac1a - 2}g(y) + \frac2at^{\frac1a - 1}\frac{\partial }{\partial t}g(y) + t^{\frac1a}\frac{\partial^2 }{\partial t^2}g(y)\right]\right |_{h=0}\\
+&= \left. -\frac{T}{T_c^2}\left[\left(\frac1a -1 \right)\left(\frac1a\right)t^{\frac1a - 2}g(y)\right]\right |_{h=0}\\
+&= -\frac{T}{T_c^2}\left[\left(\frac1a -1 \right)\left(\frac1a\right)t^{\frac1a - 2}g(0)\right]\\
+\end{align}
+$$
+
+
+$$
+-{\left(\frac{T}{\mathit{Tc}} - 1\right)}^{-\frac{2 \, b}{a} + \frac{1}{a}} \mathrm{D}_{0, 0}\left(g\right)\left(\frac{h}{{\left(\frac{T}{\mathit{Tc}} - 1\right)}^{\frac{b}{a}}}\right)
+$$
+************
+# References
+1. Di Francesco, P., Mathieu, P., & Senechal, D. (1997). Conformal Field Theory. Springer-Verlag Berlin Heidelberg.
+2. Goldenfeld, N. (1992). Lectures on Phase Transitions and the Renormalization Group. Addison-Wesley Publishing Company.
 
