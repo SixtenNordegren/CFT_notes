@@ -37,7 +37,7 @@ The critical exponents are defined as follows
 $$
 \begin{align}
 C &\sim |T-T_c|^{-\alpha},\\
-M &\sim |T-T_c|^\beta,\\
+M &\sim |T_c-T|^\beta,\\
 \chi &\sim |T-T_c|^{-\gamma},\\
 \text{and } \xi &\sim |T-T_c|^{-\nu}.
 \end{align}
@@ -142,16 +142,66 @@ $$
 Substituting these results back into the specific heat we find that the only part that survives is the first term, which is given by
 $$
 \begin{align}
-C_v &= \left. -\frac{T}{T_c^2}\left[\left(\frac1a -1 \right)\left(\frac1a\right)t^{\frac1a - 2}g(y) + \frac2at^{\frac1a - 1}\frac{\partial }{\partial t}g(y) + t^{\frac1a}\frac{\partial^2 }{\partial t^2}g(y)\right]\right |_{h=0}\\
-&= \left. -\frac{T}{T_c^2}\left[\left(\frac1a -1 \right)\left(\frac1a\right)t^{\frac1a - 2}g(y)\right]\right |_{h=0}\\
-&= -\frac{T}{T_c^2}\left[\left(\frac1a -1 \right)\left(\frac1a\right)t^{\frac1a - 2}g(0)\right]\\
+C_v &= \left. -\frac{T}{T_c^2}\left[\left(\frac1a -1 \right)\left(\frac1a\right)t^{\frac1a - 2}g(y) + \frac2at^{\frac1a - 1}\frac{\partial }{\partial t}g(y) + t^{\frac1a}\frac{\partial^2 }{\partial t^2}g(y)\right]\right |_{h=0};\\
+&= -\frac{T}{T_c^2}\left[\left(\frac1a -1 \right)\left(\frac1a\right)t^{\frac1a - 2}g(0)\right].\\
+\end{align}
+$$
+
+The scaling hypothesis is an attempt at integrating two experimental results into one equation [Goldenfeld](#References), namely
+$$
+M(t, h=0) = \begin{cases}
+0 & t > 0,\\
+\pm A \left | t\right |^\beta  & t < 0.
+\end{cases}
+$$
+And the behaviour along the critical isotherm, i.e. at the critical temperature, $t=0$, where
+$$
+M(t=0, h) = \pm B \left | h\right |^{1/\delta} .
+$$
+We know from previous calculationss that the magnetization is given by
+$$
+M(t, h) = -t^{-\frac{(b+1)}{a}}\frac{\partial}{\partial y}g(y).
+$$
+The combination with this equation and that we know the magentezation should be proportional to $M \propto t^\frac1\delta$ when $t\to 0$ allows us to make a few deductions. If t is to either diverge and be non-zero the exponents of $t$ must be equal to zero. Secondly, $\partial_y g(y)$ can be seen to take the following form
+$$
+\begin{align}
+t^{-\frac{(b+1)}{a}}\frac{\partial}{\partial y}g(y) &\propto t^{\frac{1-b}{a}}(y^{\frac{1}{\delta}}) \text{ as } y\to\infty;\\
+&=t^{\frac{1-b}{a}}\left(\frac{h}{t^{b/a}}\right)^{\frac{1}{\delta}};\\
+&=t^{\frac{1-b}{a}}t^{-\frac{b}{a\delta}}h^{\frac{1}{\delta}};\\
+&=t^{\frac{1-b-b/\delta}{a}}h^{\frac{1}{\delta}}.
+\end{align}
+$$
+We first notice that with this form of $\partial_y g(y)$ the magnetization exhibits the correct proportionalities. Secondly, we can deduce that the exponent of $t$ must be zero, i.e. $1-b-b/\delta = 0$, or equivalently $\delta = \frac{b}{b-1}$. This is one out of four initial constraints that we can put on the critical exponents.
+
+We find the rest of the constraints by observing that we already know the propotionalty relations for the susceptibility and the specific heat. We start by rewriting them in terms of $t$, 
+$$
+\begin{align}
+C &\propto \left | T - T_c\right |^{-\alpha} = T_c^{-\alpha}\left | \frac{T}{T_c} - 1\right |^{-\alpha} = T_c\left | t\right |^{-\alpha};\\
+\chi &\propto \left | T - T_c\right |^{-\gamma} = T_c^{-\gamma}\left | -t\right |^{-\gamma};\\
+M &\propto \left | T - T_c\right |^\beta = T_c^{\beta}\left | t\right |^\beta.
+\end{align}
+$$
+Now in the $h\to 0$ limit, along the critical isotherm, we have the following relations
+$$
+\begin{align}
+C &= -t^{\frac{1-b}{a}}g^\prime(0) \propto T_c^{-\alpha}\left | t\right |^{-\alpha};\\
+\chi &= -t^{(1-2b)/a}g^{\prime\prime}(0) \propto T_c^{-\gamma}\left | t\right |^{-\gamma};\\
+M &= -t^{-\frac{(b+1)}{a}}g^\prime(0) \propto T_c^{\beta}\left | t\right |^\beta.
+\end{align}
+$$
+
+Leading to the total set of constraints
+$$
+\begin{align}
+\alpha &= -\frac{1-b}{a};\\
+\beta &= -\frac{b+1}{a};\\
+\gamma &= -\frac{1-2b}{a};\\
+\delta &= \frac{b}{b-1}.
 \end{align}
 $$
 
 
-$$
--{\left(\frac{T}{\mathit{Tc}} - 1\right)}^{-\frac{2 \, b}{a} + \frac{1}{a}} \mathrm{D}_{0, 0}\left(g\right)\left(\frac{h}{{\left(\frac{T}{\mathit{Tc}} - 1\right)}^{\frac{b}{a}}}\right)
-$$
+
 ************
 # References
 1. Di Francesco, P., Mathieu, P., & Senechal, D. (1997). Conformal Field Theory. Springer-Verlag Berlin Heidelberg.
