@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Statistical mechanics/Review on Phase Transitions.md",
-                "mode": "preview",
+                "file": "README.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Review on Phase Transitions"
+              "title": "README"
             }
           }
         ]
@@ -166,11 +166,11 @@
   },
   "active": "1673b66227893892",
   "lastOpenFiles": [
+    "Statistical mechanics/Review on Phase Transitions.md",
     "Statistical mechanics/Review on Phase Transitions.md~",
     "Statistical mechanics/calculation.sage~",
     "Statistical mechanics/calculation.sage",
     "Statistical mechanics/Review on statistical mechanics.md",
-    "Statistical mechanics/Review on Phase Transitions.md",
     "Vanishing trace.md",
     "Symmetries and conservation laws/Active Transformation.md",
     "README.md",
@@ -189,7 +189,6 @@
     "DICTIONARY.md",
     "README.md~",
     "Vanishing trace.md~",
-    "4913",
     "active-transformation.md",
     "Symmetries and conservation laws/Symmetries and Conservation Laws.md",
     "Symmetries and Conservation Laws.md",
