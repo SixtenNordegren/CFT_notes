@@ -200,8 +200,6 @@ $$
 \end{align}
 $$
 
-
-
 ************
 # References
 1. Di Francesco, P., Mathieu, P., & Senechal, D. (1997). Conformal Field Theory. Springer-Verlag Berlin Heidelberg.

@@ -1,6 +1,6 @@
 # CFT Notes
 
-This repository contains notes on Conformal Field Theory (CFT), inspired by *Conformal Field Theory* by Philippe Di Francesco, Pierre Mathieu, and David Sénéchal. The notes aim to provide a concise and clear reference for key topics in CFT.
+This repository contains notes on Conformal Field Theory (CFT). The notes aim to provide a concise and clear reference for key topics in CFT.
 
 ## Viewing Instructions
 
@@ -17,4 +17,9 @@ This repository is licensed under the [Zero-Clause BSD](LICENSE).
 ---
 
 Contributions and suggestions are welcome via issues or pull requests.
+
+# Sources
+- [Infinite conformal symmetry in two-dimensional quantum field theory](https://www.sciencedirect.com/science/article/abs/pii/055032138490052X) by A.A. Belavin, A.M. Polyakov, and A.B. Zamolodchikov
+- [Conformal Field Theory](https://books.google.se/books?id=keUrdME5rhIC) by Philippe Di Francesco, Pierre Mathieu, and David Senechal
+- [Phase Transitions and the Renormalization Group](https://books.google.se/books?id=HQpQDwAAQBAJ) by Nigel Goldenfeld
 
