@@ -2,9 +2,8 @@
 id: Review on Phase Transitions
 aliases: []
 tags: []
-ID: Review on Phase Transitions
 ---
-************
+
  When studying phase transitions it is useful to split them into two categories. We have the first-order transitions which are characterized by a sudden jump in temperature and energy, this energy is often referred to as latent heat. Secondly have the continuous phase transitions which requires no latent heat. It is worth pointing out that while the phase transitions themselves are continuous, their derivatives need not be.
 
 Consider the [[Review on statistical mechanics#The Ising model |Ising model]] we recall from our discussion of the model that its Hamiltonian is given by 
@@ -199,6 +198,135 @@ $$
 \delta &= \frac{b}{b-1}.
 \end{align}
 $$
+
+### Hypercubic lattice
+We can further constrain the critical exponents by considering the hypercubic lattice, see figure below.
+
+![Hypercubic lattice](./graphics/hypercubic_lattice.pdf)
+
+In this new system we treat each block as a spin onto itself. 
+Each block has a side $r$ in units of lattice spacing. It is worthwile to make sure that one understands this definition of lattice spacing properly, as many of the steps and definitions to come turn out quite natural from it.
+A cube of "lattice spacing length" $(r=1)$ is a single point,
+
+![Single point lattice](./graphics/single_point_lattice.pdf); $r=1$.
+And a cube with side length $r=2$ looks like,
+![Two point lattice](./graphics/two_point_lattice.pdf); $r=2$.
+It then follows immediately, if $d$ is the dimmension of the lattice, there are $r^d$ different spins within a block.
+Each spin within a block can take on values in $\{-1, 1\}$ just like before. This gives us a natural way to define a block spin,
+$$
+\sigma_I =\frac1{R} \sum_{i\in I} \sigma_i,
+$$
+where $I$ is the sites within a block and $R$ is a normalizing factor, which job it is to ensure that the block spin $\sigma_I$ takes on a effective value of 1 or -1.
+
+Consider now the correlation function, $\Gamma(i-j)$ which we have defined in the [[Review on statistical mechanics | Review on statistical mechanics]] as,
+$$
+\Gamma(i-j) = \left<\sigma_i\sigma_{j}\right> - \left<\sigma_i\right>\left<\sigma_{j}\right>.
+$$
+
+It is common to refer to $\Gamma(i-j)$ as simply $\Gamma(n)$ where $n = i-j$ is the distance between the spins. We can now define the correlation function for the block spins as,
+$$
+\begin{align}
+\Gamma(n) &= \left<\sigma_I\sigma_{J}\right> - \left<\sigma_I\right>\left<\sigma_J\right>;\\
+&= \frac1{R^2}\sum_{i,j\in I,J}\left\{\left<\sigma_i\sigma_j\right> - \left<\sigma_i\right>\left<\sigma_j\right>\right\};\\
+&= \frac1{R^2}r^{2n}\sum_{i,j\in I, J}\left\{\frac{\left<\sigma_i\sigma_j\right> - \left<\sigma_i\right>\left<\sigma_j\right>}{r^{2n}}\right\};\\
+&= \frac1{R^2}r^{2n}\Gamma(rn).
+\end{align}
+$$
+Here, we have normalized the pair correlator function with the number of spins within a block. In other words we are taking the pair correlator of not $i-j$ but of the scaled-up distance $rn$. 
+
+We also know the proportionality relation for the correlation function,
+$$
+\Gamma(n) \propto \left | n\right |^{2 -d -\eta}.
+$$
+This has the consequence for the block correlator that
+$$
+\begin{align}
+\Gamma^\prime(n) &\propto R^{-2}r^{2d}\left | rn\right |^{2 -d -\eta};\\
+&= R^{-2}r^{2+d-\eta}\left | n\right |^{2 -d -\eta};\\
+\end{align}
+$$
+
+Now imposing the same proprtionality relation to $\Gamma^\prime(n)$ as we did for $\Gamma(n)$ we find that terms other than $|n|^{2-d-\eta}$ must vanish. This gives us the constraint$$
+\begin{align}
+R^{-2}&r^{2+d-\eta} = 1.\\
+R^{-2} &= r^{-2-d+\eta}\\
+R &= r^{(2+d-\eta)/2}.
+\end{align}
+$$
+
+Now consider the block hamiltonian, $H^\prime$. It should involve the same interaction energy as the normal hamiltonian $(H)$, with the external field and therefore we have,
+$$
+\begin{align}
+h\sum_I\sigma_i &= h^\prime\sum_I\Sigma_i;\\
+&=h^\prime R^{-1}\sum_I\sigma_i;\\
+\end{align}
+$$
+which implies 
+$$
+h^\prime = hR.
+$$
+which we now know is
+$$
+h^\prime = hr^{(2+d-\eta)/2}.
+$$
+
+We can then use the scaling hypothesis, i.e.,$h^\prime = h\lambda^b$ and letting the side length of the block be $r = \lambda^\frac1d$ (implying that the number of spins within a block is just $\lambda$). Gives us the following connection
+$$
+\begin{align}
+h\lambda^b &= hr^{(2+d-\eta)/2};\\
+&= h\lambda^{\frac{2+d-\eta}{2d}};\\
+\implies b &= \frac{2+d-\eta}{2d}.
+\end{align}
+$$
+
+Now if we consider the correlation length for the block model $(\xi^\prime)$, it is natural to define in terms of the old correlation length $(\xi)$ as 
+$$
+\xi^\prime = \xi/r.
+$$
+Using the proportionality relation once more allows us to show 
+$$
+\begin{align}
+\xi^\prime \propto \left | t\right |^{-\nu};\\
+\frac\xi r \propto \left | t\right |^{-\nu}.\\
+\xi \propto r\left | t\right |^{-\nu};\\
+\implies rt^{\prime-\nu} = t^{-\nu};\\
+t^{\prime} = t r^{\frac1\nu}.
+\end{align}
+$$
+Now turning once more to the scaling hypothesis we know 
+$$
+\begin{align}
+t^\prime &= t\lambda^a;\\
+\lambda^a &= r^{\frac1\nu};\\
+&= \lambda^{\frac1{d\nu}};\\
+\end{align}
+$$
+which of course tells us that $a = \frac1{d\nu}$. We have then successfully expressed our previous critical exponents $(\alpha -- \delta)$ in terms of the new critical exponents $(\eta, \nu)$ and the dimension of the lattice $(d)$. Continuing where we left of with our previous set of constraints we can now write them as
+$$
+\begin{align}
+\alpha &= 2 - d\nu;\\
+\beta &= \frac\nu2\left( d - 2 + \eta\right);\\
+\gamma &= \frac{2-\eta}{\nu};\\
+\delta &= \frac{d+2-\eta}{d-2+\eta}.
+\end{align}
+$$
+These equations have historical names and are all presented in their historical form in the table below.
+$$
+\begin{array}{c c}
+\hline
+\text{Rushbrooke's law} & \alpha + 2\beta + \gamma = 2;\\
+\text{Widom's law} & \gamma = \beta(\delta - 1);\\
+\text{Fisher's law} & \gamma = \nu(2-\eta);\\
+\text{Josephson's law} & \nu\delta = 2 - \alpha;\\
+\hline
+\end{array}
+$$
+
+
+
+
+
+
 
 ************
 # References
