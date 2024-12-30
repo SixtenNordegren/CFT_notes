@@ -246,7 +246,8 @@ $$
 \end{align}
 $$
 
-Now imposing the same proprtionality relation to $\Gamma^\prime(n)$ as we did for $\Gamma(n)$ we find that terms other than $|n|^{2-d-\eta}$ must vanish. This gives us the constraint$$
+Now imposing the same proprtionality relation to $\Gamma^\prime(n)$ as we did for $\Gamma(n)$ we find that terms other than $|n|^{2-d-\eta}$ must vanish. This gives us the constraint
+$$
 \begin{align}
 R^{-2}&r^{2+d-\eta} = 1.\\
 R^{-2} &= r^{-2-d+\eta}\\
@@ -301,7 +302,7 @@ t^\prime &= t\lambda^a;\\
 &= \lambda^{\frac1{d\nu}};\\
 \end{align}
 $$
-which of course tells us that $a = \frac1{d\nu}$. We have then successfully expressed our previous critical exponents $(\alpha -- \delta)$ in terms of the new critical exponents $(\eta, \nu)$ and the dimension of the lattice $(d)$. Continuing where we left of with our previous set of constraints we can now write them as
+which of course tells us that $a = \frac1{d\nu}$. We have then successfully expressed our previous critical exponents $(\alpha \text{ through } \delta)$ in terms of the new critical exponents $(\eta, \nu)$ and the dimension of the lattice $(d)$. Continuing where we left of with our previous set of constraints we can now write them as
 $$
 \begin{align}
 \alpha &= 2 - d\nu;\\
@@ -322,11 +323,29 @@ $$
 \end{array}
 $$
 
+### Broken symmetry
+As we know from Noethers theorm, conserved quantities are related to symmetries of the action, or int the case of classical systems; the configuration energy. It can be said that such a system is broken when macroscopic quantities, which do not respect this symmetry have non-vanishing expectation values. An easy example of this is given by the 2-d Ising model with zero external magnetic field. It is easy to see, as we have seen in [[Review on statistical mechanics#The Ising model | Ising model]], that the energy is invariant under the transformation $\sigma_i\to -\sigma_i$. The magnetization for this however does not vanish in the sub-critical regime. This can be easaly seen by considering the magnetization as a function of the temperature, $M(T)$. It is easy to see from a simulation of the Ising model below, 
+
+Sub-critical | Critical | Super-critical
+--- | --- | ---
+![Ising model simulation](./graphics/Ising_subcrit.gif) | ![Ising model simulation](./graphics/Ising_crit.gif) | ![Ising model simulation](./graphics/Ising_supercrit.gif)
+
+Here a blue tile represents spin down and a red tile represents a spin up at the vertex. Clearly the expectation value is negative in this regime. 
+
+We can also see that the magnetization does not reflect the same symmetry seeing as from [[Review on statistical mechanics| Review on statistical mechanics]] we know that the magnetization is given by
+$$
+\begin{align}
+M &= \frac1{NZ}\sum_{\[\sigma\]}\sum_i\left\{\sigma_i \right\}\exp(-\beta E[\sigma]).\\
+&\to-M \text{ under the transformation }\sigma_i\to -\sigma_i.
+\end{align}
+$$
+Where $Z$ is a function of the configuration energy, $E[\sigma]$, which we know itself is invariant under the transformation $\sigma_i\to -\sigma_i$. This allows us to conclude that the magnetization is a non-zero quantity in the sub-critical regime.
 
 
+Before we end this section it is worth briefly mentioning the MWC (Mermin Wagner Coleman) theorem. This theorem addresses continuum models. These models does not admit discrete but rather continuous symmetries. The MWC theorem states that it is not possible to break the symmetry of continuous models in one or two dimensions. You can read more about the MWC theorem in section 11.1 of [Goldenfeld](#References) and Wikipedia also has a good article on the subject [here](https://en.wikipedia.org/wiki/Mermin%E2%80%93Wagner_theorem).
 
 
-
+We continue our discussion in the next section where we will discuss the renormalization group [[Review on renormalization group | Renormalization group]].
 
 ************
 # References
