@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Statistical mechanics/Review on Phase Transitions.md",
-                "mode": "preview",
+                "file": "Math/'Differential gemetry'.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Review on Phase Transitions"
+              "title": "'Differential gemetry'"
             }
           }
         ]
@@ -166,10 +166,11 @@
   },
   "active": "1673b66227893892",
   "lastOpenFiles": [
+    "Math/'Differential gemetry'.md~",
+    "Statistical mechanics/Review on Phase Transitions.md",
     "Statistical mechanics/Review on Phase Transitions.md~",
     "Statistical mechanics/'Review on the renormalization group'.md",
     "Review on renormalization group.md",
-    "Statistical mechanics/Review on Phase Transitions.md",
     "Single point lattice",
     "Statistical mechanics/graphics/hypercubic_lattice.synctex.gz",
     "Statistical mechanics/graphics/hypercubic_lattice.pdf",
