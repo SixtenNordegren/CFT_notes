@@ -326,9 +326,9 @@ $$
 ### Broken symmetry
 As we know from Noethers theorm, conserved quantities are related to symmetries of the action, or int the case of classical systems; the configuration energy. It can be said that such a system is broken when macroscopic quantities, which do not respect this symmetry have non-vanishing expectation values. An easy example of this is given by the 2-d Ising model with zero external magnetic field. It is easy to see, as we have seen in [[Review on statistical mechanics#The Ising model | Ising model]], that the energy is invariant under the transformation $\sigma_i\to -\sigma_i$. The magnetization for this however does not vanish in the sub-critical regime. This can be easaly seen by considering the magnetization as a function of the temperature, $M(T)$. It is easy to see from a simulation of the Ising model below, 
 
-Sub-critical | Critical | Super-critical
---- | --- | ---
-![Ising model simulation](./graphics/Ising_subcrit.gif) | ![Ising model simulation](./graphics/Ising_crit.gif) | ![Ising model simulation](./graphics/Ising_supercrit.gif)
+| Sub-critical                                            | Critical                                             | Super-critical                                            |
+| ------------------------------------------------------- | ---------------------------------------------------- | --------------------------------------------------------- |
+| ![Ising model simulation](./graphics/Ising_subcrit.gif) | ![Ising model simulation](./graphics/Ising_crit.gif) | ![Ising model simulation](./graphics/Ising_supercrit.gif) |
 
 Here a blue tile represents spin down and a red tile represents a spin up at the vertex. Clearly the expectation value is negative in this regime. 
 
