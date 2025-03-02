@@ -1,7 +1,9 @@
 ---
 id: Active Transformation
 aliases: []
-tags: []
+tags:
+  - topic/QFT
+  - topic/Group Theory
 ---
 
 In this note we investigate the active transformation, and its effects on a general action functional $S[\phi, \partial_\mu\phi]$. We start by giving a definition of the concepts and proceed to work out a few examples. Further more we investigate the infinitesimal transformation and give a short proof of Nöters theorem.
@@ -30,7 +32,7 @@ $$
 S^\prime &= \int d^dx \mathcal L\left(\phi^\prime(x),\partial_\mu\phi^\prime(x)\right)\\
 &=\int d^dx^\prime \mathcal L\left(\phi^\prime(x^\prime),\partial^\prime_\mu\phi^\prime(x^\prime)\right) \qquad \text{(Change of integration variable.)}\\
 &=\int d^dx^\prime \mathcal L\left(\mathcal F(\phi(x)),\partial^\prime_\mu\mathcal F (\phi(x))\right) \qquad \text{( Applying equation \eqref{1}.)}\\
-&=\int \left | \frac{\partial x^\prime}{\partial x}\right | d^dx \mathcal L\left(\mathcal F(\phi(x)),\frac{\partial x^{\prime\nu}}{\partial x^{\prime \mu}}\partial^\prime_\nu\mathcal F (\phi(x))\right) \qquad 
+&=\int \left | \frac{\partial x^\prime}{\partial x}\right | d^dx \mathcal L\left(\mathcal F(\phi(x)),\frac{\partial x^{\prime\nu}}{\partial x^{\prime \mu}}\partial^\prime_\nu\mathcal F (\phi(x))\right) \qquad
 \end{aligned}
 \tag{2}
 $$
@@ -43,11 +45,11 @@ With the expression for the action we just derived we are able to compute a few 
 $$
 \begin{align}
 x^\prime &= x + a \qquad\text{( $a$ is a constant parameter.)}\\
-\phi^\prime (x + a) &= \phi (x) 
+\phi^\prime (x + a) &= \phi (x)
 \end{align}
 $$
 
-This example is trivial seeing as 
+This example is trivial seeing as
 $$
 \left | \frac{\partial x^\prime}{\partial x} \right | = 1,\qquad \frac{\partial x^{\,\nu}}{\partial x^{\prime \mu}} = \delta^{\,\nu}_{\mu},\quad \text{and}\quad \mathcal F(\phi(x))= \phi(x) .
 $$
@@ -65,7 +67,7 @@ Using formula $\eqref{2}$, we move to compute the Jacobian and the change of var
 
 $$
 \begin{align}
-\left | \frac{\partial x^\prime}{\partial x}\right|  
+\left | \frac{\partial x^\prime}{\partial x}\right|
 &= \text{det}\left(\frac{\partial x^{\prime\mu}}{\partial x^\nu}\right )\\
 &= \text{det}\left(\frac{\partial}{\partial x^\nu} \Lambda^{\mu}_{\,\rho}x^{\rho}\right)\\
 &= \text{det}\left(\Lambda^{\mu}_{\,\rho}\delta^{\rho}_{\nu}\right)\\
@@ -81,7 +83,7 @@ $$
 $$
 [^1]: There are representations of the Lorentz group that are non-unitary. However for our purposes I we will strictly use unitary ones. (I think)
 
-3. E.x.: Scale transformations 
+3. E.x.: Scale transformations
 
 $$
 \begin{gather}
@@ -94,13 +96,13 @@ Since we get a simple Jacobian, namely
 $$
 \left | \frac{\partial x^\prime}{\partial x}\right| = \lambda,
 $$
-we use formula $\eqref{2}$ and we get 
+we use formula $\eqref{2}$ and we get
 $$
 S^\prime = \lambda^d \int d^dx \mathcal L (\lambda^{-\delta} \phi, \lambda^{-1 -\Delta}\partial_\mu\phi).
 $$
 ### Infinitesimal transformation
 
-In this section we consider the active transformations caused by a set of infinitesimal parameters $\{\omega_a\}$. The transformations we refer to in this section are 
+In this section we consider the active transformations caused by a set of infinitesimal parameters $\{\omega_a\}$. The transformations we refer to in this section are
 $$
 \begin{align}
 x^\mu \to x^{\prime\mu} = x^\mu + \omega_a \frac{\delta x^\mu}{\delta \omega_a},\\
@@ -127,7 +129,7 @@ $$
 \end{align}
 $$
 
-Having expanded $\phi(x)$ in combination with the transformed field $\eqref{4}$ allows us deduce the following 
+Having expanded $\phi(x)$ in combination with the transformed field $\eqref{4}$ allows us deduce the following
 $$
 \begin{align}
 \phi^\prime (x^\prime) &= \phi(x) + \omega_a \frac{\delta\mathcal F }{\delta\omega_a}(x) \\
@@ -142,7 +144,7 @@ $$
 \end{align}
 $$
 
-Secondly, we can use our previous calculation to determine the generators, 
+Secondly, we can use our previous calculation to determine the generators,
 $$
 i G_a \phi(x) = - \frac{\partial \phi(x^\prime)}{\partial x} \frac{\delta x}{\delta \omega_a}+ \frac{\delta \mathcal F}{\delta \omega_a}(x)
 $$
@@ -151,11 +153,11 @@ Now to evaluate our expression for the action $\ref{2}$ we compute the Jacobian 
 $$
 \text{det}(1 + E) \approx 1 + \text{Tr}E
 $$
-we see that the Jacobian determiniant can be written as 
+we see that the Jacobian determiniant can be written as
 $$
 \left | \frac{\partial x^\prime}{\partial x} \right| \approx 1 + \partial_\mu \left(\omega_a\frac{\delta x^\mu}{\delta \omega_a}\right)
 $$
-and the Jacobian matrix 
+and the Jacobian matrix
 $$
 \frac{\partial x^\nu}{\partial x^{\prime\mu}} = \delta^\nu_\mu - \partial_\mu\left(\omega_a\frac{\delta x^\nu}{\delta \omega_a}\right).
 $$
@@ -170,7 +172,7 @@ Now expanding expression around $x$ w.r.t. $\omega_a$ we can write the variation
 $$
 \delta S = \int d^d x \partial_\mu j^\mu_{\,a}\omega_a
 $$
-where $j^\mu_{\,a}$ is the concerved current defined as 
+where $j^\mu_{\,a}$ is the concerved current defined as
 $$
 j^\mu_{\,a} = \left\{\frac{\partial \mathcal L}{\partial \left(\partial_\mu \phi\right)}-\delta^\mu_\nu\mathcal L\right\}\frac{\delta x^\nu}{\delta \omega_a} - \frac{\partial \mathcal L}{\partial\left(\partial_\mu\phi\right)}\frac{\delta\mathcal F}{\delta \omega_a}.
 $$

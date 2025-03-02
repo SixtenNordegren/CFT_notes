@@ -1,0 +1,11 @@
+img {
+  display: block; /* Make the image a block element */
+  margin-left: auto;
+  margin-right: auto;
+}
+/* OR to center images with a specific class*/
+img.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

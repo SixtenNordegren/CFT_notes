@@ -1,7 +1,9 @@
 ---
-id: "'Differential gemetry'"
+id: Differential geometry
 aliases: []
-tags: []
+tags:
+  - area/mathematics
+  - topic/differential-geometry
 ---
 Let $\mathcal M$ be a manifold.
 ##### Def. Vector Field

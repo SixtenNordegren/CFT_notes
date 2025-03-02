@@ -1,7 +1,9 @@
 ---
 id: Review on the Renormalization Group
 aliases: []
-tags: []
+tags:
+  - topic/renormalization-group
+  - type/review
 ---
 
 ### Introduction

@@ -1,3 +1,12 @@
+---
+id: Vanishing trace
+aliases: []
+tags:
+  - topic/QFT
+  - topic/CFT
+  - type/proof
+---
+
 The aim of this note is to show, with as much detail as possible, that conformal invariance is equivalent to having a vanishing stress tensor.
 
 We do this in two sections. In the first section we derive a useful formula, writing the variation of the action in terms of the stress tensor and the variation of the metric tensor. In the second part of the note we show a quick proof, starting from this formula.
@@ -13,7 +22,7 @@ The current associated with infinitesimal translations is called the stress-ener
 $$
 \delta S  =\int d^dx \partial_\mu T^{\mu\nu}\epsilon_\nu.
 $$
-Here $\epsilon_\nu$ is an infinitesimal parameter and the index $a$ from $\eqref{1}$ has now become a space-time index. We quickly rewrite our expression with partial integration 
+Here $\epsilon_\nu$ is an infinitesimal parameter and the index $a$ from $\eqref{1}$ has now become a space-time index. We quickly rewrite our expression with partial integration
 $$
 \begin{align}
 \delta S &= \int \left(d^dx T^{\mu\nu}\partial_\mu\epsilon_\nu\right) + \bigl[T^{\mu\nu}\epsilon_\nu\bigl]_{-\infty}^\infty\\
@@ -35,7 +44,7 @@ Consider now the metric tensor $(g_{\mu\nu})$ and let it undergo a [[Passive Tra
 $$
 g^\prime_{\mu\nu} = \frac{\partial x^\alpha}{\partial x^{\prime \mu}}\frac{\partial x^\beta}{\partial x^{\prime\nu}}g_{\alpha\beta}.
 $$
-Under an infinitesimal translation $x$ transforms as 
+Under an infinitesimal translation $x$ transforms as
 $$
 x^\mu\to x^{\prime\mu} = x^\mu + \epsilon^\mu.
 $$
@@ -56,11 +65,11 @@ With this expression it is extremely simple to compute the variation of the metr
 $$
 \delta g_{\mu\nu} = - \left(\partial_\nu\epsilon^\beta g_{\mu\beta} + \partial_\mu\epsilon^\alpha g_{\alpha\nu}\right).
 $$
-Using this expression in combination with equation $\eqref{2}$, we get 
+Using this expression in combination with equation $\eqref{2}$, we get
 $$
 \delta S = - \frac12\int d^dxT^{\mu\nu}\delta g_{\mu\nu}.\tag{3}
 $$
-## Proof 
+## Proof
 A conformal transformation is an invertible map, leaving the metric tensor invariant up to a scale
 $$
 g_{\mu\nu}(x) \to g^\prime_{\mu\nu} (x^\prime) = \Lambda(x)g_{\mu\nu} (x).
@@ -73,7 +82,7 @@ we can very easily evaluate the variation of the metric,
 $$
 \delta g_{\mu\nu} = \sigma(x)g_{\mu\nu}.
 $$
-Combing this expression with $\eqref{3}$ we get 
+Combing this expression with $\eqref{3}$ we get
 $$
 \begin{align}
 \delta S &= - \frac12\int d^dx T^{\mu\nu}\sigma(x)g_{\mu\nu};\\

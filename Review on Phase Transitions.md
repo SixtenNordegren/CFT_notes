@@ -1,12 +1,15 @@
 ---
 id: Review on Phase Transitions
 aliases: []
-tags: []
+tags:
+  - topic/phase-transitions
+  - type/review
+  - area/statistical-mechanics
 ---
 
  When studying phase transitions it is useful to split them into two categories. We have the first-order transitions which are characterized by a sudden jump in temperature and energy, this energy is often referred to as latent heat. Secondly have the continuous phase transitions which requires no latent heat. It is worth pointing out that while the phase transitions themselves are continuous, their derivatives need not be.
 
-Consider the [[Review on statistical mechanics#The Ising model |Ising model]] we recall from our discussion of the model that its Hamiltonian is given by 
+Consider the [[Review on statistical mechanics#The Ising model |Ising model]] we recall from our discussion of the model that its Hamiltonian is given by
 $$
 H= - J \sum^N_{\braket{i j}}\sigma_i\sigma_j - h \sum_i^N\sigma_i.
 $$
@@ -17,22 +20,22 @@ $$
 I reemphasize for the sake of clarity, that $z$ is the partition function for a small subgroup of points rather then for the whole system, which is still denoted $Z$.
 
 
-In the zero field limit $(h\to 0)$ we can choose $\varepsilon = J$ and the highest energy configuration (the one where all spins align) becomes 
+In the zero field limit $(h\to 0)$ we can choose $\varepsilon = J$ and the highest energy configuration (the one where all spins align) becomes
 $$
 \begin{align}
 H &= \varepsilon \sum^N_{\braket{ij}} \sigma_i\sigma_j\\
   &= \varepsilon \sum^N_{\braket{ij}} 1\\
   &= \varepsilon \sum^N_{ij} \delta(1-|i-j|)\\
   &= \varepsilon 2N \quad\text{One } \forall\, i > j\text{, and one } \forall\, j > i.
-\end{align} 
+\end{align}
 $$
 Each configuration contributes a power of $z$ to the partition function. So the partition function can be written as a polynomial of degree $2N$ in $z$.
 
-The singularities of the free energy $(F)$ w.r.t. this polynomial can only happen at its roots. They all exist in the complex plane, which is comfortably out of reach for a finite number of nodes. However, as $N\to\infty$ the roots form curves of solutions which may intersect the real axis, and the critical behaviour takes place at those singularities. 
+The singularities of the free energy $(F)$ w.r.t. this polynomial can only happen at its roots. They all exist in the complex plane, which is comfortably out of reach for a finite number of nodes. However, as $N\to\infty$ the roots form curves of solutions which may intersect the real axis, and the critical behaviour takes place at those singularities.
 
-Critical exponents are parameters that can characterize the phase transitions at these singularities. Temperature is often chosen as the quantity of interest to generalize said behaviour, but it need not be. There are other macroscopic parameters that can be used as well such as pressure or an external magnetic field. 
+Critical exponents are parameters that can characterize the phase transitions at these singularities. Temperature is often chosen as the quantity of interest to generalize said behaviour, but it need not be. There are other macroscopic parameters that can be used as well such as pressure or an external magnetic field.
 
-The critical exponents are defined as follows 
+The critical exponents are defined as follows
 $$
 \begin{align}
 C &\sim |T-T_c|^{-\alpha},\\
@@ -60,7 +63,7 @@ $$
 ### Scaling hypothesis
 The critical exponents we have previously discussed can be related by a "scaling hypothesis".
 $$
-f(\lambda^a t, \lambda^b h) = \lambda f(t,h), 
+f(\lambda^a t, \lambda^b h) = \lambda f(t,h),
 $$
 i.e. there exsists exponents $a$ and $b$ such that the scaled parameters, $\lambda^a t$ and $\lambda^b h$, are related to the original parameters $t$ and $h$ by a scaled function $f$ dependant only on the unscaled parameters. The parameter $t$ is the reduced temperature, $t = (T-T_c)/T_c$, and $h$ is the external magnetic field which we are familiar with from our discussion of the [[Review on statistical mechanics#The Ising model |Ising model]]. The function $f$ in question is the free-energy-density or free-energy-per-site, depending on the weather the system one consider is continuous or discrete.
 
@@ -77,7 +80,7 @@ $$
 t^{\frac1a}f = g(y).
 $$
 
-In the creation of this composite function we have used a small trick. Simply by solving for f we have heavily constrained its form. 
+In the creation of this composite function we have used a small trick. Simply by solving for f we have heavily constrained its form.
 $$
 f = t^{-\frac1a}g(y).
 $$
@@ -172,7 +175,7 @@ t^{-\frac{(b+1)}{a}}\frac{\partial}{\partial y}g(y) &\propto t^{\frac{1-b}{a}}(y
 $$
 We first notice that with this form of $\partial_y g(y)$ the magnetization exhibits the correct proportionalities. Secondly, we can deduce that the exponent of $t$ must be zero, i.e. $1-b-b/\delta = 0$, or equivalently $\delta = \frac{b}{b-1}$. This is one out of four initial constraints that we can put on the critical exponents.
 
-We find the rest of the constraints by observing that we already know the propotionalty relations for the susceptibility and the specific heat. We start by rewriting them in terms of $t$, 
+We find the rest of the constraints by observing that we already know the propotionalty relations for the susceptibility and the specific heat. We start by rewriting them in terms of $t$,
 $$
 \begin{align}
 C &\propto \left | T - T_c\right |^{-\alpha} = T_c^{-\alpha}\left | \frac{T}{T_c} - 1\right |^{-\alpha} = T_c\left | t\right |^{-\alpha};\\
@@ -204,7 +207,7 @@ We can further constrain the critical exponents by considering the hypercubic la
 
 ![Hypercubic lattice](./graphics/hypercubic_lattice.pdf)
 
-In this new system we treat each block as a spin onto itself. 
+In this new system we treat each block as a spin onto itself.
 Each block has a side $r$ in units of lattice spacing. It is worthwile to make sure that one understands this definition of lattice spacing properly, as many of the steps and definitions to come turn out quite natural from it.
 A cube of "lattice spacing length" $(r=1)$ is a single point,
 
@@ -232,7 +235,7 @@ $$
 &= \frac1{R^2}r^{2n}\Gamma(rn).
 \end{align}
 $$
-Here, we have normalized the pair correlator function with the number of spins within a block. In other words we are taking the pair correlator of not $i-j$ but of the scaled-up distance $rn$. 
+Here, we have normalized the pair correlator function with the number of spins within a block. In other words we are taking the pair correlator of not $i-j$ but of the scaled-up distance $rn$.
 
 We also know the proportionality relation for the correlation function,
 $$
@@ -262,7 +265,7 @@ h\sum_I\sigma_i &= h^\prime\sum_I\Sigma_i;\\
 &=h^\prime R^{-1}\sum_I\sigma_i;\\
 \end{align}
 $$
-which implies 
+which implies
 $$
 h^\prime = hR.
 $$
@@ -280,11 +283,11 @@ h\lambda^b &= hr^{(2+d-\eta)/2};\\
 \end{align}
 $$
 
-Now if we consider the correlation length for the block model $(\xi^\prime)$, it is natural to define in terms of the old correlation length $(\xi)$ as 
+Now if we consider the correlation length for the block model $(\xi^\prime)$, it is natural to define in terms of the old correlation length $(\xi)$ as
 $$
 \xi^\prime = \xi/r.
 $$
-Using the proportionality relation once more allows us to show 
+Using the proportionality relation once more allows us to show
 $$
 \begin{align}
 \xi^\prime \propto \left | t\right |^{-\nu};\\
@@ -294,7 +297,7 @@ $$
 t^{\prime} = t r^{\frac1\nu}.
 \end{align}
 $$
-Now turning once more to the scaling hypothesis we know 
+Now turning once more to the scaling hypothesis we know
 $$
 \begin{align}
 t^\prime &= t\lambda^a;\\
@@ -324,13 +327,13 @@ $$
 $$
 
 ### Broken symmetry
-As we know from Noethers theorm, conserved quantities are related to symmetries of the action, or int the case of classical systems; the configuration energy. It can be said that such a system is broken when macroscopic quantities, which do not respect this symmetry have non-vanishing expectation values. An easy example of this is given by the 2-d Ising model with zero external magnetic field. It is easy to see, as we have seen in [[Review on statistical mechanics#The Ising model | Ising model]], that the energy is invariant under the transformation $\sigma_i\to -\sigma_i$. The magnetization for this however does not vanish in the sub-critical regime. This can be easaly seen by considering the magnetization as a function of the temperature, $M(T)$. It is easy to see from a simulation of the Ising model below, 
+As we know from Noethers theorm, conserved quantities are related to symmetries of the action, or int the case of classical systems; the configuration energy. It can be said that such a system is broken when macroscopic quantities, which do not respect this symmetry have non-vanishing expectation values. An easy example of this is given by the 2-d Ising model with zero external magnetic field. It is easy to see, as we have seen in [[Review on statistical mechanics#The Ising model | Ising model]], that the energy is invariant under the transformation $\sigma_i\to -\sigma_i$. The magnetization for this however does not vanish in the sub-critical regime. This can be easaly seen by considering the magnetization as a function of the temperature, $M(T)$. It is easy to see from a simulation of the Ising model below,
 
 | Sub-critical                                            | Critical                                             | Super-critical                                            |
 | ------------------------------------------------------- | ---------------------------------------------------- | --------------------------------------------------------- |
 | ![Ising model simulation](./graphics/Ising_subcrit.gif) | ![Ising model simulation](./graphics/Ising_crit.gif) | ![Ising model simulation](./graphics/Ising_supercrit.gif) |
 
-Here a blue tile represents spin down and a red tile represents a spin up at the vertex. Clearly the expectation value is negative in this regime. 
+Here a blue tile represents spin down and a red tile represents a spin up at the vertex. Clearly the expectation value is negative in this regime.
 
 We can also see that the magnetization does not reflect the same symmetry seeing as from [[Review on statistical mechanics| Review on statistical mechanics]] we know that the magnetization is given by
 $$

@@ -1,7 +1,9 @@
 ---
 id: Review on statistical mechanics
 aliases: []
-tags: []
+tags:
+  - topic/statistical-mechanics
+  - type/review
 ---
 
 In statistical mechanics, the goal is to treat systems that consist of a number of particles $(N)$. One does this by specifying macroscopic properties of the system as a whole e.g. Temperature $(T)$, Number of particles $(N)$, or Free energy $(F)$ and so on.
@@ -24,25 +26,25 @@ Z = \sum_i\exp-\beta E_i.
 $$
 A grouping of particles (i.e. an ensemble) is called the canonical ensemble if they are Boltzmann distributed. The partition function is of particular interest since it can alone determine other macroscopic quantities. Specifically, the derivatives of $Z$ can be used to characterize the system as a whole, it is because of this property $Z$ is called the generating function for the system.
 
-An example of this property is demonstrated by considering the average energy. 
+An example of this property is demonstrated by considering the average energy.
 $$
 \begin{align}
 U &= \sum_i E_ip_i,\\
 &= \frac1Z \sum_iE_i \exp\left(-\beta E_i\right).
 \end{align}
 $$
-We can simplify this expression further by computing the derivatives of the partition function 
+We can simplify this expression further by computing the derivatives of the partition function
 $$
 \begin{align}
 \frac{\partial Z}{\partial\beta} &= \frac{\partial}{\partial \beta} \left(\sum\exp\left(-\beta E_i\right)\right),\\
 &=-\sum_i E_i\exp\left(\beta E_i\right),
 \end{align}
 $$
-from where we can conclude that the average energy is 
+from where we can conclude that the average energy is
 $$
 U = -\frac1Z\frac{\partial Z}{\partial \beta}.
 $$
-Furthermore, we can define the free energy 
+Furthermore, we can define the free energy
 $$
 F := -T\ln\left(Z\right).
 $$
@@ -50,14 +52,14 @@ By inverting this relation we can conclude,
 $$
 Z = \exp \left(- F\beta\right).
 $$
-We can use this relation to rewrite the average energy a final time, 
+We can use this relation to rewrite the average energy a final time,
 $$
 \begin{align}
 U &= -\frac1Z\frac{\partial T}{\partial \beta}\frac{\partial Z}{\partial T};\\
 &= -\frac1{T^2}\frac\partial{\partial T}\left(\frac F T\right),
 \end{align}
 $$
-where we have done a change of coordinates matrix in the first equation, and in the last step we just keep what is left of the inner derivative. 
+where we have done a change of coordinates matrix in the first equation, and in the last step we just keep what is left of the inner derivative.
 ### The Ising model
 
 
@@ -80,12 +82,12 @@ $$
 \rho = \exp(\beta H).
 $$
 
-Here, $H$ denotes the Hamiltonian for the system and $\beta$ the inverse temperature as it has before. We can then use our previous definition for the partition function 
+Here, $H$ denotes the Hamiltonian for the system and $\beta$ the inverse temperature as it has before. We can then use our previous definition for the partition function
 $$
 Z = \sum_n e^{-\beta E_n} = \rm{Tr}(\rho).
 $$
 
-The statistical average of an operator $A$ then becomes 
+The statistical average of an operator $A$ then becomes
 $$
     \begin{align}
         \braket{A} &= \sum_n \bra{n}\rho A\ket{n} \\
@@ -95,7 +97,7 @@ $$
 
 By exploiting the likeness of the desnity operator $(e^{-\beta H})$ and the time-evulotion operator $(e^{-iHt})$ allows us to express a representation of the density operator as a functional integral.
 
-Consider the Kernell (null space) of the density operator for 1 d.o.f. 
+Consider the Kernell (null space) of the density operator for 1 d.o.f.
 $$
 \rho(x_f,x_i) = \bra{x_f}e^{-\beta H}\ket{x_i}.
 $$
@@ -107,7 +109,7 @@ And for the density operator,
 $$
 \rho(x_f,x_i) = \int^{(x_f,\beta)}_{(x_i,0)}\left[dx\right]\exp\left(-\rm{S}_\rm{E}[x]\right).
 $$
-This allows us to write the partition function as 
+This allows us to write the partition function as
 $$
 \begin{split}
 Z &= \int dx\rho(x,x)\\
@@ -115,7 +117,7 @@ Z &= \int dx\rho(x,x)\\
 \end{split}
 $$
 
-The expectation value can then be written as 
+The expectation value can then be written as
 $$
 \begin{split}
 \braket{a} &= \frac 1 Z\int dx \bra{x} \rho A \ket{x},\\

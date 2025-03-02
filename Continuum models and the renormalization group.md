@@ -1,7 +1,10 @@
 ---
 id: Contimuum models and the renormalization group
 aliases: []
-tags: []
+tags:
+  - topic/renormalization-group
+  - topic/continuum-models
+  - area/statistical-mechanics
 ---
 
 Previously, we have considered discrete lattice models, In order to apply what we have learned about these models and the renormalization group to continuum models (or quantum field theory) we must aquatint ourselves with a process called momentum-space renormalization
@@ -136,7 +139,7 @@ $$
 
 We immediately notice that $S^\prime$ has the same form as $S$ for $r=0,\,\, \Delta = \frac12d-1$. Thus, the massless r=0 model is a fixed point of the renormalization group.
 ##### Dimensionsanalyse
-Consider now an action outside of a fixed point $S[\phi]$. We can write this action as
+Consider now an action outside a fixed point $S[\phi]$. We can write this action as
 $$
 S[\phi] = S_0[\phi]+\sum_iu_i\int d\mathbf x O(x).
 $$

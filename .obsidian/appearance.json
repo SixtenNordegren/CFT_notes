@@ -1,1 +1,6 @@
-{}
+{
+  "theme": "moonstone",
+  "enabledCssSnippets": [
+    "css_snippets"
+  ]
+}
