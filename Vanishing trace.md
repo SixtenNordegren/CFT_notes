@@ -16,7 +16,7 @@ The variation of the action $(\delta S)$ can, for a general QFT, be show to be w
 $$
 \delta S = \int d^dx \partial_\mu j^\mu_a \omega_a;\tag{1}
 $$
-see the note on [[Active Transformation|active transformations]] for more details.
+see the note on [[Conformal Transformations|active transformations]] for more details.
 
 The current associated with infinitesimal translations is called the stress-energy-momentum tensor, or just stress tensor for short. The when written in equation $\eqref{1}$ we get
 $$

@@ -6,7 +6,7 @@ tags:
   - topic/Group Theory
 ---
 
-In this note we investigate the active transformation, and its effects on a general action functional $S[\phi, \partial_\mu\phi]$. We start by giving a definition of the concepts and proceed to work out a few examples. Further more we investigate the infinitesimal transformation and give a short proof of Nöters theorem.
+In this note we investigate the active transformation, and its effects on a general action functional $S[\phi, \partial_\mu\phi]$. We start by giving a definition of the concepts and proceed to work out a few examples. Furthermore we investigate the infinitesimal transformation and give a short proof of Nöters theorem.
 
 ### Introduction
 A transformation of the action $S$ can be thought of from two different perspectives. The first one, the *active* transformation, adds or changes the content of a function i.e., by setting it to a different value then what it first was.
@@ -153,7 +153,7 @@ Now to evaluate our expression for the action $\ref{2}$ we compute the Jacobian 
 $$
 \text{det}(1 + E) \approx 1 + \text{Tr}E
 $$
-we see that the Jacobian determiniant can be written as
+we see that the Jacobian determinant can be written as
 $$
 \left | \frac{\partial x^\prime}{\partial x} \right| \approx 1 + \partial_\mu \left(\omega_a\frac{\delta x^\mu}{\delta \omega_a}\right)
 $$
@@ -167,17 +167,17 @@ $$
 S^\prime = \int d^dx\left(1 + \partial_\mu \left(\omega_a \frac{\delta x^\mu}{\delta\omega_a}\times \mathcal L \left( \phi + \omega_a \frac{\mathcal F}{\delta\omega_a}, \left[\delta^\nu_\mu - \partial_\mu\left(\omega_a \left(\frac{\delta x^\nu}{\delta \omega^a}\right)\right)\right]\left(\partial_\nu\phi + \partial_\nu\left[\omega_a \left(\frac{\delta \mathcal F}{\delta \omega_a}\right)\right]\right)\right)\right)\right)
 $$
 
-Now expanding expression around $x$ w.r.t. $\omega_a$ we can write the variation of the action, simlarly to how we did for the field. This equation is quite a bit more tedious so we leave out the explicit calculation for now. The result is the following:
+Now expanding expression around $x$ w.r.t. $\omega_a$ we can write the variation of the action, similarly to how we did for the field. This equation is quite a bit more tedious, so we leave out the explicit calculation for now. The result is the following:
 
 $$
 \delta S = \int d^d x \partial_\mu j^\mu_{\,a}\omega_a
 $$
-where $j^\mu_{\,a}$ is the concerved current defined as
+where $j^\mu_{\,a}$ is the conserved current defined as
 $$
 j^\mu_{\,a} = \left\{\frac{\partial \mathcal L}{\partial \left(\partial_\mu \phi\right)}-\delta^\mu_\nu\mathcal L\right\}\frac{\delta x^\nu}{\delta \omega_a} - \frac{\partial \mathcal L}{\partial\left(\partial_\mu\phi\right)}\frac{\delta\mathcal F}{\delta \omega_a}.
 $$
 
-This is an example of the famous Noether's theorem. The principle of least action,
+This is an example of the famous Nöther's theorem. The principle of least action,
 $$
 \delta S = 0,
 $$
@@ -185,3 +185,17 @@ implies the following conservation law
 $$
 \partial_\mu j^\mu_{\,a} = 0.
 $$
+
+#### Conformal Transformations in d-dimensions
+
+It is important to realize that conformal invariance of classical theories does not mean that a quantized version of that same theory will respect the same conformal invariance. Indeed, for a QFT to be well-defined one needs to introduce a cutoff and consequently a rescaling of the theory. This rescaling will break conformal invariance except at specific values of said scaling. These values correspond to configurations that are fixed points of the re-normalization group.
+
+A spinless field transforms as follows under conformal transformation:
+$$
+\phi(\mathbf x ) \to \phi^\prime(\mathbf x) = \left| \frac{\partial \mathbf{x}^\prime}{\partial{\mathbf x}}\right|^{-\Delta/d}\phi(\mathbf x)
+$$
+where $\Delta$ is the scaling dimension of the theory and the Jacobian can be related to the scale factor $\Lambda(x)$ as
+$$
+\left|\frac{\partial\mathbf{x}^\prime}{\partial \mathbf x}\right| = \Lambda (\mathbf x )^{-d/2}.
+$$
+Fields that transform like these are called *quasi primary*.
